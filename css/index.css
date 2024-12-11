@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/istockphoto-1047570732-612x612.jpg');
+
+    background-size: cover;
+    background-position: center;
+   
+      
+}
+
+
+.button-container {
+    display: flex;
+    gap: 100px; /* Espacio entre los botones */
+}
+
+button {
+    padding: 70px 80px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #9cacbd6d;
+    color: rgb(247, 247, 247);
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Superlativos de Verbos</title>
+    <link rel="stylesheet" href="css/ejercicio-superlativo.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Ejercicio: Superlativos de Verbos en Inglés</h1>
+        
+        <div class="quiz">
+            <div class="questions-container">
+                <!-- Las preguntas se agregarán aquí dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+        <button class="submit-btn" id="next-btn" onclick="nextQuestion()">Siguiente Pregunta</button>
+        <button class="restart-btn" id="restart-btn" onclick="restartQuiz()" style="display: none;">Volver al inicio</button>
+        
+        <div class="result" id="result" style="display: none;">
+            <h2>Resultados</h2>
+            <p id="correct-answers">Respuestas correctas: 0</p>
+            <p id="incorrect-answers">Respuestas incorrectas: 0</p>
+            <p id="percentage">Porcentaje: 0%</p>
+        </div>
+    </div>
+
+    <script src="js/ejercicio-superlativo.js"></script>
+</body>
+</html>

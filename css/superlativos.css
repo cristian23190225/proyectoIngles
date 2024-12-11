@@ -1,0 +1,112 @@
+/* Estilo general para el fondo y el contenido */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 247, 127); /* Fondo celeste */
+    overflow: hidden; /* Para evitar barras de desplazamiento */
+    font-family: Arial, sans-serif; /* Fuente clara */
+}
+
+/* Estilo de contenido */
+.content {
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    position: relative;
+}
+
+/* Estilo del video */
+.video {
+    width: 60%;
+    max-width: 600px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de la caja de información */
+.info-box {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 700px;
+    text-align: left;
+    color: #f1f1f1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-height: 300px; /* Reduce el alto máximo para mejorar la visibilidad del video */
+    overflow-y: auto;
+}
+
+/* Estilo del encabezado */
+.info-box h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo de los párrafos */
+.info-box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Cuadro de texto y botón */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+
+/* Botón de inicio */
+.start-btn {
+    padding: 10px 20px;
+    font-size: 1rem; /* Aumenta el tamaño del texto en el botón */
+    background-color: #fffefe99; /* Botón verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+a {
+    color: #0c0c0c;
+    text-decoration: none;
+}
+
+.start-btn:hover {
+    background-color: hsl(0, 0%, 60%);
+}
+
+/* Estilo de los círculos de fondo */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: black;
+    animation: moveCircles 5s linear infinite;
+    opacity: 0.7;
+    z-index: 0; /* Asegura que los círculos estén detrás del contenido */
+}
+
+/* Animación de los círculos */
+@keyframes moveCircles {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(1000px, 1000px); /* Movimiento de los círculos */
+    }
+}
